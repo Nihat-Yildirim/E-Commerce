@@ -10,7 +10,6 @@ namespace IdentityService.Domain.Entities
         public string Email { get; set; } = null!;
         public byte[] PasswordHash { get; set; } = null!;
         public byte[] PasswordSalt { get; set; } = null!;
-        public DateTime BirthTime { get; set; }
         public DateTime? DeletedDate { get; set; }
 
         public Role? Role { get; set; } = null!;

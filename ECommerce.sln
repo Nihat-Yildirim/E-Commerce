@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{247C2905-5CC1-4129-A25F-D20C8998C5A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E6051589-C543-4F92-B16F-782D09ECC9BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceCore", "ServiceCore", "{4EE71497-6840-48BF-9436-3DF8D5AB86D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceCorePackages", "src\Services\ServiceCore\ServiceCorePackages\ServiceCorePackages.csproj", "{45A76E0F-3CB8-4D07-AF9F-EF443FCC017E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45A76E0F-3CB8-4D07-AF9F-EF443FCC017E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A76E0F-3CB8-4D07-AF9F-EF443FCC017E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A76E0F-3CB8-4D07-AF9F-EF443FCC017E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A76E0F-3CB8-4D07-AF9F-EF443FCC017E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6051589-C543-4F92-B16F-782D09ECC9BD} = {247C2905-5CC1-4129-A25F-D20C8998C5A3}
+		{4EE71497-6840-48BF-9436-3DF8D5AB86D0} = {E6051589-C543-4F92-B16F-782D09ECC9BD}
+		{45A76E0F-3CB8-4D07-AF9F-EF443FCC017E} = {4EE71497-6840-48BF-9436-3DF8D5AB86D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0031274D-68CA-4A0A-89A9-DB70824F9D5F}

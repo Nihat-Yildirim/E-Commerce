@@ -1,5 +1,6 @@
 using IdentityService.Infrastructure;
 using IdentityService.Persistence;
+using IdentityService.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddPersistenceServices();
+builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices();
 
 var app = builder.Build();
